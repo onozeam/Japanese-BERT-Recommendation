@@ -1,6 +1,8 @@
 # Japanese-BERT-Recommendation
 日本語BERTモデルとAllenNLPを用いた記事レコメンデーションモデルの雛形です。
-[モデルの画像]
+
+
+![model_image](https://github.com/onozeam/Japanese-BERT-Recommendation/blob/master/model_overview.png)
 
 ## Detail
 メディアサイトで記事のレコメンデーションする際に、日本語BERTの事前学習モデル(東北大学 乾・鈴木研究室)を使用する際にベースとして使用できるモデル設計です。
