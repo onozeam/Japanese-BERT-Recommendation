@@ -108,8 +108,8 @@ def train(clargs: argparse.ArgumentParser):
     token_indexer = PretrainedTransformerIndexer('cl-tohoku/bert-base-japanese')
     tokenizer = token_indexer._allennlp_tokenizer.tokenize
     reader = SampleDatasetReader(tokenizer, {'tokens': token_indexer})
-    train_ds = reader.read('sample.csv')
-    test_ds = reader.read('sample.csv')
+    train_ds = reader.read('dataset.csv')
+    test_ds = reader.read('dataset.csv')
     vocab = Vocabulary()
     train_ds.index_with(vocab)
     test_ds.index_with(vocab)
@@ -137,7 +137,7 @@ def infer(clargs: argparse.ArgumentParser):
     token_indexer = PretrainedTransformerIndexer('cl-tohoku/bert-base-japanese')
     tokenizer = token_indexer._allennlp_tokenizer.tokenize
     reader = SampleDatasetReader(tokenizer, {'tokens': token_indexer})
-    ds = reader.read('sample.csv')
+    ds = reader.read('dataset.csv')
     vocab = Vocabulary()
     ds.index_with(vocab)
     data_loader = AllennlpDataLoader(dataset=ds, batch_size=1, shuffle=False)
