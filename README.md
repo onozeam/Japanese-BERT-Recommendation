@@ -5,7 +5,7 @@
 ![model_image](https://github.com/onozeam/Japanese-BERT-Recommendation/blob/master/model_overview.png)
 
 ## Detail
-メディアサイトで記事のレコメンデーションする際に、日本語BERTの事前学習モデル(東北大学 乾・鈴木研究室)を使用する際にベースとして使用できるモデル設計です。
+メディアサイト等においてで記事のレコメンデーションする際に、日本語BERTの事前学習モデル(東北大学 乾・鈴木研究室)を使用する場合にベースとして使用できるモデル設計です。
 Youtube社の論文 ([Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/45530.pdf))にインスパイアされています。
 
 ### Dataset
